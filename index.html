@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog o Podróżach</title>
+<style>
+  body { font-family: Arial, sans-serif; margin:0; padding:0; background-color: #ffffff; }
+  .header { text-align: center; padding: 50px 20px; background-image: url('shutterstock_97739021.jpg'); color: black; background-size: cover; }
+  .row { display: flex; flex-wrap: wrap; justify-content: space-around; margin: 20px 0; }
+  .column { flex: 0 1 30%; margin: 10px; padding: 20px; }
+  .column img { width: 100%; height: auto; }
+  .info-block, .footer, .faq { text-align: center; padding: 20px; margin: 20px; }
+  .color-white { background-color: #ffffff; }
+  .color-grey { background-color: #f3f3f3; }
+  @media (max-width:640px){
+    .column { flex: 0 1 100%; }
+    .header { padding: 20px 10px; }
+  }
+</style>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(reg => console.log('Service Worker: Registered'))
+        .catch(err => console.log(`Service Worker: Error: ${err}`));
+    });
+  }
+</script>
+</head>
+<body>
+
+<div class="header">
+  <h1>Blog o Podróżach</h1>
+  <p>Przygody czekają на кажддом кroku!</p>
+</div>
+
+<div class="row color-grey">
+  <div class="column color-white">
+    <h2>Wspaniałe miejsca w Europie</h2>
+    <img src="europe.webp" alt="Europe">
+    <p>Europa kryje wiele nieodkrytych miejsc, które warto odwiedzić. Zobacz, które z nich powinieneś dodać do swojej listy.</p>
+  </div>
+  <div class="column color-grey">
+    <h2>Tajemnice Azji</h2>
+    <img src="asia-travel-thumb_1664456142.jpg" alt="Asia">
+    <p>Azja oferuje niesamowite kultury i krajobrazy. Dowiedz się więcej o miejscach, które mogą całkowicie zmienić Twoje postrzeganie świata.</p>
+  </div>
+  <div class="column color-white">
+    <h2>Odkrywanie Ameryki</h2>
+    <img src="america.webp" alt="America">
+    <p>Od gęstych dżungli po wielkie metropolie, Ameryka jest kontynentem pełnym przygód. Przeczytaj o niezwykłych miejscach do zwiedzania.</p>
+  </div>
+</div>
+
+<div class="faq color-grey">
+  <h2>FAQ o Podróżach</h2>
+  <p><strong>Jakie szczepienia są wymagane przed podróżą do Azji?</strong> Zalecane szczepienia mogą obejmować szczepionki przeciwko żółtej febrze, dur brzuszny i wirusowemu zapaleniu wątroby typu A i B, w zależności od kraju.</p>
+  <p><strong>Jak najlepiej przetransportować rower w samolocie?</strong> Najbezpieczniej jest użyć specjalnej torby lub walizki do transportu roweru. Upewnij się, że wszystkie części są odpowiednio zabezpieczone.</p>
+  <p><strong>Jakie aplikacje mobilne ułatwią podróżowanie?</strong> Aplikacje takie jak Google Maps, TripAdvisor, i XE Currency są niezwykle pomocne podczas podróży.</p>
+</div>
+
+<div class="row color-white">
+  <div class="column color-grey">
+    <h2>Kulinarna podróż po świecie</h2>
+    <p>Odkryj smaki świata. Odwiedź miejscowe rynki, spróbuj uliczne jedzenie i uczestnicz w warsztatach kulinarnych.</p>
+  </div>
+  <div class="column color-white">
+    <h2>Porady dla podróżujących samotnie</h2>
+    <p>Podróżowanie w pojedynkę może być niezapomnianym doświadczeniem. Dowiedz się, jak bezpiecznie podróżować и jak nawiązywać nowe znajomości.</p>
+  </div>
+</div>
+
+<div class="row color-grey">
+  <div class="column color-white">
+    <h2>Predstojące wydarzenia w świecie podróży</h2>
+    <p>Zaplanuj swoją następną przygodę z naszym przewodnikiem po najciekawszych wydarzeniach turystycznych nadchodzącego roku.</p>
+  </div>
+  <div class="column color-grey">
+    <h2>Ostatnie wpisy w blogu</h2>
+    <p>Przeczytaj nasze najnowsze historie и raporty z podróży naszego zespołu, które zainspirują Cię do odkrywania nowych miejsc.</p>
+  </div>
+  <div class="column color-white">
+    <h2>Sposoby на oszczędności podczas podróży</h2>
+    <p>Poznaj nasze najlepsze wskazówki, как podróżować światem, не wydając fortuny.</p>
+  </div>
+</div>
+
+<div class="footer color-grey">
+  <p>@2024 Blog o Podrozach. Wszelkie prawa zastrzezone. Dziękujemy за odwiedzenie naszej strony!</p>
+  <p>Dołącz do naszej społeczności podróżników już dzisiaj!</p>
+</div>
+
+</body>
+</html>
