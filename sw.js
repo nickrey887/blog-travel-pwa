@@ -1,13 +1,14 @@
 const CACHE_NAME = 'v1';
 const assetsToCache = [
-    '/',
-    '/index.html',
-    '/icon-192x192.png',
-    '/icon-256x256.png',
-    '/icon-384x384.png',
-    '/icon-512x512.png',
-    '/manifest.json'
+    '/blog-travel-pwa/',
+    '/blog-travel-pwa/index.html',
+    '/blog-travel-pwa/icon-192x192.png',
+    '/blog-travel-pwa/icon-256x256.png',
+    '/blog-travel-pwa/icon-384x384.png',
+    '/blog-travel-pwa/icon-512x512.png',
+    '/blog-travel-pwa/manifest.json'
 ];
+
 
 self.addEventListener('install', event => {
     event.waitUntil(
